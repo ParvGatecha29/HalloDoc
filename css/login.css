@@ -1,0 +1,90 @@
+body {
+    background: #c9ccd1;
+    color:black;
+}
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+
+.form-style input {
+    border: 1px solid #0dcaf0;
+    height: 50px;
+    border-radius: 0;
+    ;
+}
+
+.form-style input:focus {
+    border-bottom: 1px solid #0dcaf0;
+    box-shadow: none;
+    outline: 0;
+    background-color: #ebebeb;
+}
+
+.sideline {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ccc;
+}
+
+button {
+    height: 50px;
+}
+
+.sideline:before,
+.sideline:after {
+    content: '';
+    border-top: 1px solid #ebebeb;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+.sideline:after {
+    margin: 0 0 0 20px;
+}
+
+.foot {
+    position: absolute;
+    bottom: 1%;
+}
+
+.btn-info {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url("/images/11116016_415.jpg") center center;
+        opacity: .4;
+        background-size: cover;
+    }
+
+    .rightcol {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #0dcaf0;
+}
+
+span{
+    position: absolute;
+    right:5%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+  }

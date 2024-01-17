@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login Page</title>
+</head>
+
+<body class="container-fluid d-flex p-0">
+    <script src="https://use.fontawesome.com/f59bcd8580.js"></script>
+    <div class="container-fluid">
+        <div class="row no-gutters shadow-lg">
+            <div class="col-md-6 d-none d-md-block p-0">
+                <img src="/images/11116016_415.jpg"
+                    class="img-fluid min-vh-100"/>
+            </div>
+
+            <div class="col-md-6 p-5 d-flex bg-white flex-column align-items-center justify-content-center min-vh-100 rightcol">
+                <button class="position-absolute top-0 end-0 m-3 p-2 rounded btn btn-outline-info" onclick="myFunction()">
+                    <i class="bi bi-moon"></i>
+                </button>
+                <div class="bg"></div>
+                <img src="/images/image_2024_01_17T05_36_30_212Z.png"
+                    class="img-fluid"/>
+                <h3 class="pb-3">Login Into Your Account</h3>
+                <div class="form-style w-50">
+                    <form>
+                        <div class="form-group pb-3 form-floating d-flex d-inline">
+                            <input type="email" placeholder="Username" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <span>
+                                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            </span>
+                            <label for="exampleInputEmail1">Username</label>
+                        </div>
+                        <div class="form-group pb-3 form-floating d-flex d-inline">
+                            <input type="password" placeholder="Password" class="form-control"
+                                id="exampleInputPassword1">
+                            <span>
+                                    <i class="bi bi-eye" aria-hidden="true"></i>
+                            </span>
+                            <label for="exampleInputPassword1">Password</label>
+                        </div>
+                        <div class="pb-2">
+                            <button type="submit" class="btn btn-info w-100 font-weight-bold mt-2">Submit</button>
+                        </div>
+                    </form>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div><a href="/forgotpassowrd.html">Forgot Password?</a></div>
+                    </div>
+                </div>
+                <footer class="foot">
+                    Terms & conditions Privacy Policy
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var right = document.querySelector(".rightcol");
+            right.classList.toggle("dark-mode");
+            right.classList.toggle("bg-white");
+            var input = document.querySelectorAll("input");
+            for(var i=0; i<input.length; i++) {
+            {
+                input[i].classList.toggle("dark-mode");
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>
