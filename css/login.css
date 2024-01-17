@@ -88,3 +88,7 @@ span{
     display: flex;
     align-items: center;
   }
+
+  .form-style{
+    width:80%;
+  }
