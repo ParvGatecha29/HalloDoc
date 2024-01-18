@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Request</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/subreq.css">
+</head>
+
+<body>
+    <div class="container-fluid" style="min-height: 100vh;">
+        <div class="row">
+            <div class="col-12 navBar w-100">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="/images/hallodoc.png" alt="logo" class="navLogo">
+                        </a>
+                        <button class="btn btn-outline-info ms-auto my-auto border darkBtn" type="button" onclick="myFunction()"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-moon" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+                            </svg></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-9 col-xl-8 text-center">
+                <h2 class="display-6 fw-bold my-4 d-inline-block">I am a..</h2>
+                <button class="float-end my-4 btn btn-outline-info backBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-chevron-left fw-medium mb-1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                    </svg>Back</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="d-grid col-6 col-md-5 col-lg-4 col-xl-3 mt-2">
+                <button class="btn text-uppercase fw-medium fs-4 my-3 pb-3 text-start patientBtn"
+                    type="button">Patient</button>
+                <button class="btn btn-outline-info bg-info-subtle text-uppercase fw-medium fs-4 my-3 pb-3 text-start famBtn"
+                    type="button">Family/Friend</button>
+                <button
+                    class="btn btn-outline-success bg-success-subtle text-uppercase fw-medium fs-4 my-3 pb-3 text-start concBtn"
+                    type="button">Concierge</button>
+                <button class="btn btn-outline- text-uppercase fw-medium fs-4 my-3 pb-3 text-start busBtn"
+                    type="button">Business Partner</button>
+            </div>
+        </div>
+        <div class="row ">
+                <footer class="text-end ">
+                    <a href="#" class="text-white-50 text-decoration-none fs-6">Terms and
+                        Conditions</a><span class="text-white-50 mx-3">|</span><a href="#"
+                        class="text-white-50 text-decoration-none fs-6">Privacy Policy</a>
+                </footer>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var input = document.querySelectorAll("input");
+            for(var i=0; i<input.length; i++)
+            {
+                input[i].classList.toggle("dark-mode");
+            }
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("shadow");
+            nav.classList.toggle("shadow-light");
+        }
+    </script>
+</body>
+
+</html>

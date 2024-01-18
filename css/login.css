@@ -1,13 +1,12 @@
 body {
     background: #c9ccd1;
-    color:black;
+    color: black;
 }
-  
-  .dark-mode {
+
+.dark-mode {
     background-color: black;
     color: white;
-  }
-
+}
 
 .form-style input {
     border: 1px solid #0dcaf0;
@@ -81,14 +80,31 @@ a {
     color: #0dcaf0;
 }
 
-span{
+span {
     position: absolute;
-    right:5%;
+    right: 5%;
     height: 55px;
     display: flex;
     align-items: center;
-  }
+}
 
-  .form-style{
-    width:80%;
-  }
+.form-style {
+    width: 80%;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("/images/11116016_415.jpg") center center;
+    opacity: .4;
+    background-size: cover;
+}
+
+.rightcol {
+    position: relative;
+    z-index: 1;
+}

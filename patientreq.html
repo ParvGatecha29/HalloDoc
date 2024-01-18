@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Patient Request</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/patreq.css">
+    <!-- <link rel="stylesheet" href="/css/international-telephone-input.css" />
+    <script src="/js/international-telephone-input.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 navBar w-100">
+                <nav class="navbar bg-white">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="/images/logo.png" alt="logo" class="navLogo">
+                        </a>
+                        <button class="btn btn-outline-info ms-auto my-auto border darkBtn" type="button"
+                            onclick="toggleDarkMode()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light" style="min-height: 100vh;">
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-6 justify-content-end"><button class="float-end my-4 btn btn-outline-info backBtn"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-left fw-medium mb-1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                    </svg>Back</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-6 rounded" style="box-shadow: 2px 2px 20px rgb(179, 177, 177);">
+                <h6 class="h6 py-3">Patient Information</h6>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Symptoms" id="symptoms"
+                        style="height: 15vh;"></textarea>
+                    <label for="symptoms" class="text-muted floating-label">Enter Brief Details of Symptoms
+                        (Optional)</label>
+                </div>
+                <div class="container-fluid mt-3 p-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="fname" placeholder="First Name">
+                                <label for="fname" class="text-muted floating-label">First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                                <label for="lname" class="text-muted floating-label">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="date" class="form-control" id="dob" placeholder="First Name">
+                                <label for="dob" class="text-muted floating-label">Date of Birth</label>
+                            </div>
+                            <h6 class="h6 py-3">Patient Contact Information</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="patientEmail"
+                                    mailto:placeholder="name@example.com">
+                                <label for="patientEmail" class="text-muted floating-label">Email address</label>
+                            </div>
+                            <h6 class="h6 py-3">Patient Location</h6>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="patientTel" placeholder="+91-6489957367">
+                                <label for="patientTel" class="text-muted floating-label">Phone number</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="street" placeholder="Street">
+                                <label for="street" class="text-muted floating-label">Street</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="city" placeholder="City">
+                                <label for="city" class="text-muted floating-label">City</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="state" placeholder="State">
+                                <label for="state" class="text-muted floating-label">State</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="zip" placeholder="Zip Code">
+                                <label for="zip" class="text-muted floating-label">Zip Code</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="roomNum" placeholder="Room #/ Suite (Optional)">
+                                <label for="roomNum" class="text-muted floating-label">Room #/ Suite (Optional)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="h6 py-3">(Optional) Upload Photo or Document</h6>
+                        </div>
+                        <div class="col-12">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFileLang">
+                                <label class="custom-file-label" for="customFileLang">Select File</label>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+        var date = new Date();
+
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+
+        if (month < 10) month = "0" + month;
+        if (day < 10) day = "0" + day;
+
+        var today = year + "-" + month + "-" + day;
+        document.getElementById("dob").value = today;
+    </script>
+</body>
+
+</html>
