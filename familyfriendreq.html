@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Patient Request</title>
+    <title>Family/Friend Request</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/patreq.css">
     <!-- <link rel="stylesheet" href="/css/international-telephone-input.css" />
@@ -12,11 +12,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 
 <body>
-    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-center">
+            <div class="modal-body p-5">
+                <i class="fa-solid fa-circle-exclamation fa-3x text-warning border border-1 p-2 border-warning rounded-circle mb-3"></i>
+                <h3>Information</h3>
+                <p>When submitting a request, you must provide the correct contact information for the patient or the responsible party. Failure to provide the correct email and phone number will delay service or be declined.</p>
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Ok</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+        window.onload = function() {
+            myModal.show();
+        }
+    </script>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 navBar w-100">
@@ -49,7 +70,41 @@
             </div>
         </div>
         <div class="row justify-content-center">
+
             <div class="col-10 col-md-8 col-lg-6 rounded" style="box-shadow: 2px 2px 20px rgb(179, 177, 177);">
+                <h6 class="h6 py-3">Family/Friend Information</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="ffname" placeholder="First Name">
+                            <label for="fname" class="text-muted floating-label">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="flname" placeholder="Last Name">
+                            <label for="lname" class="text-muted floating-label">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 h-75">
+                            <input type="tel" class="form-control w-100 h-100" id="fTel"
+                                placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="fEmail" placeholder="Email">
+                            <label for="patientEmail" class="text-muted floating-label">Email address</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="relation" placeholder="Relation with Patient">
+                            <label for="relation" class="text-muted floating-label">Relation with Patient</label>
+                        </div>
+                    </div>
+                </div>
                 <h6 class="h6 py-3">Patient Information</h6>
                 <div class="form-floating">
                     <textarea class="form-control" placeholder="Symptoms" id="symptoms"
@@ -83,14 +138,14 @@
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="patientEmail"
-                                    mailto:placeholder="name@example.com">
+                                    placeholder="Your Email" >
                                 <label for="patientEmail" class="text-muted floating-label">Email address</label>
                             </div>
                             <h6 class="h6 py-3">Patient Location</h6>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-floating mb-3 h-50 pb-2">
-                                <input type="tel" class="form-control h-100" id="patientTel" placeholder="Phone NUmber">
+                            <div class="form-floating mb-3 pb-2 h-50">
+                                <input type="tel" class="form-control h-100" id="patientTel" placeholder="Phone Number">
                             </div>
                         </div>
                     </div>
@@ -133,22 +188,20 @@
                         </div>
                         <div class="d-flex">
                             <label for="exampleFormControlFile1" class="col d-flex">
-                                <div class="col bg-white p-1 ps-3 border border-black "><span id="upload">Select</span>
-                                </div>
-                                <div id="btn" class="p-1 btn btn-outline-light border-info border">
+                                <div class="col bg-white p-1 ps-3"><span id="upload">Select</span></div>
+                                <div id="btn" class="p-1 btn btn-outline-light">
 
                                     <i class="bi bi-cloud-arrow-up"></i>
-                                    <span style="color:white;" class="ps-1">Upload</span>
+                                    <span class="ps-1">Upload</span>
 
                                 </div>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1" hidden
-                                    onchange="upload(this)">
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1" hidden onchange="upload(this)">
                             </label>
                         </div>
                     </div>
                     <div class="row my-3">
                         <div class="text-end">
-                            <button class="btn btn-info" style="color:white">
+                            <button class="btn btn-info" style="color:white;">
                                 Submit
                             </button>
                             <button class="btn btn-info bg-light ">
@@ -177,6 +230,7 @@
 
         var today = year + "-" + month + "-" + day;
         document.getElementById("dob").value = today;
+
         const phoneInputField = document.querySelectorAll("input[type='tel']");
         for (var i = 0; i < phoneInputField.length; i++) {
             const phoneInput = window.intlTelInput(phoneInputField[i], {
@@ -185,13 +239,11 @@
             })
         };
 
-        function upload(file) {
+        function upload(file){
             var name = file.files[0].name;
             var span = document.getElementById("upload");
             span.innerHTML = name;
-        }     
-
-        
+        } 
     </script>
     <div class="row ">
         <footer class="text-end bg-black">
@@ -199,7 +251,7 @@
                 Conditions</a><span class="text-white-50 mx-3">|</span><a href="#"
                 class="text-white-50 text-decoration-none fs-6">Privacy Policy</a>
         </footer>
-    </div>
+</div>
 </body>
 
 </html>
