@@ -1,7 +1,4 @@
-.dark-mode {
-    background-color: rgba(0, 0, 0, 0.815);
-    color: white;
-  }
+
   .backLink{
     display: none;
   }
@@ -148,7 +145,7 @@
 
 .iti {
   width:100%;
-  height:100%;
+  height:75%;
 }
 
 #info2 {

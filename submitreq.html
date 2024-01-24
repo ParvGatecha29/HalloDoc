@@ -7,6 +7,7 @@
     <title>Submit Request</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/subreq.css">
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body>
@@ -18,7 +19,7 @@
                         <a class="navbar-brand" href="#">
                             <img src="/images/hallodoc.png" alt="logo" class="navLogo">
                         </a>
-                        <button class="btn btn-outline-info ms-auto my-auto border darkBtn" type="button" onclick="myFunction()"><svg
+                        <button class="btn btn-outline-info ms-auto my-auto border darkBtn btn-toggle" type="button"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-moon" viewBox="0 0 16 16">
                                 <path
@@ -42,7 +43,7 @@
             <div class="d-grid col-6 col-md-5 col-lg-4 col-xl-3 mt-2">
                 <button class="btn text-uppercase fw-medium fs-4 my-3 pb-3 text-start patientBtn" onclick="location.href='patientreq.html'"
                     type="button">Patient</button>
-                <button class="btn btn-outline-info bg-info-subtle text-uppercase fw-medium fs-4 my-3 pb-3 text-start famBtn" onclick="location.href='familyfriendreq.html'"
+                <button class="btn bg-info-subtle btn-outline-info text-uppercase fw-medium fs-4 my-3 pb-3 text-start famBtn" onclick="location.href='familyfriendreq.html'"
                     type="button">Family/Friend</button>
                 <button
                     class="btn btn-outline-success bg-success-subtle text-uppercase fw-medium fs-4 my-3 pb-3 text-start concBtn" onclick="location.href='conciergeinfo.html'"
@@ -59,20 +60,7 @@
                 </footer>
         </div>
     </div>
-    <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-            var input = document.querySelectorAll("input");
-            for(var i=0; i<input.length; i++)
-            {
-                input[i].classList.toggle("dark-mode");
-            }
-            var nav = document.querySelector("nav");
-            nav.classList.toggle("shadow");
-            nav.classList.toggle("shadow-light");
-        }
-    </script>
+    <script type="text/javascript" src="/js/script.js"></script>
 </body>
 
 </html>
