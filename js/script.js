@@ -23,13 +23,6 @@ btn1.addEventListener("click", function () {
     localStorage.setItem("theme", theme);
 });
 
-var myModal = new bootstrap.Modal(document.getElementById('modal'));
-window.onload = function () {
-    if (sessionStorage.getItem('#modal') !== 'true') {
-        myModal.show();
-        sessionStorage.setItem('#modal', 'true');
-    }
-}
 
 function upload(file){
     var name = file.files[0].name;

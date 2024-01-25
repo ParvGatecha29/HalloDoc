@@ -13,8 +13,7 @@
   .footer{
     position: fixed;
     bottom: 1%;
-    /* left: 65%;
-    text-align: center; */
+
   }
   .navLogo{
     margin-bottom: 0;
@@ -59,30 +58,19 @@
     background-color: rgb(7, 7, 112);
   }
   
-  .darkBtn{
-   
-  }
+
   .darkBtn:hover{
     color:white !important;
   }
-  /* label{
-    color: #40c7e9;
-  } */
+
   textarea:focus { 
     outline: none !important;
     border-color: #40c7e9 !important;
     box-shadow: none !important;
     color: #40c7e9 ; 
   }
-  input:focus { 
-    outline: none !important;
-    border-color: #40c7e9 !important;
-    box-shadow: none !important;
-    color: #40c7e9 ;
-  }
-  .form-control:focus + .floating-label{
-    color: #40c7e9 !important;
-  }
+  
+  
   @media (max-width: 767.98px) { 
       .backImgContainer{
         position: relative;
@@ -124,18 +112,7 @@
       
     }
   }
-  /* html, body { height: 100%;}
-  
-  body > footer {
-    position: sticky;
-    top: 100vh;
-  } */
-  
-  /* input:not([type="button"]):not([type="submit"]):not([type="reset"]):hover, input:not([type="button"]):not([type="submit"]):not([type="reset"]):focus, textarea:hover, textarea:focus, select:hover, select:focus {
-    border-color: aqua;
-    box-shadow: none;
-  } */
-  
+
   #btn {
     width: 124px;
     display: flex;

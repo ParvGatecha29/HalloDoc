@@ -22,14 +22,17 @@
 <body>
     <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content text-center">
-            <div class="modal-body p-5">
-                <i class="fa-solid fa-circle-exclamation fa-3x text-warning border border-1 p-2 border-warning rounded-circle mb-3"></i>
-                <h3>Information</h3>
-                <p>When submitting a request, you must provide the correct contact information for the patient or the responsible party. Failure to provide the correct email and phone number will delay service or be declined.</p>
-                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Ok</button>
+            <div class="modal-content text-center">
+                <div class="modal-body p-5">
+                    <i
+                        class="fa-solid fa-circle-exclamation fa-3x text-warning border border-1 p-2 border-warning rounded-circle mb-3"></i>
+                    <h3>Information</h3>
+                    <p>When submitting a request, you must provide the correct contact information for the patient or
+                        the responsible party. Failure to provide the correct email and phone number will delay service
+                        or be declined.</p>
+                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">Ok</button>
+                </div>
             </div>
-          </div>
         </div>
     </div>
     <div class="container-fluid">
@@ -40,8 +43,8 @@
                         <a class="navbar-brand" href="#">
                             <img src="/images/hallodoc.png" alt="logo" class="navLogo">
                         </a>
-                        <button class="btn btn-outline-info ms-auto my-auto border darkBtn btn-toggle" type="button" 
-                            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        <button class="btn btn-outline-info ms-auto my-auto border darkBtn btn-toggle"
+                            type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
                                 <path
                                     d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
@@ -70,14 +73,14 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="fname" placeholder="First Name">
-                            <label for="fname" class="text-muted floating-label">First Name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="">
+                            <label for="fname" class=" floating-label">First Name</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="lname" placeholder="Last Name">
-                            <label for="lname" class="text-muted floating-label">Last Name</label>
+                            <input type="text" class="form-control" id="lname" placeholder="">
+                            <label for="lname" class=" floating-label">Last Name</label>
                         </div>
                     </div>
                     <div class="col-md-6 z-3">
@@ -88,70 +91,68 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="patientEmail"
-                                placeholder="Email address">
-                            <label for="patientEmail" class="text-muted floating-label">Email address</label>
+                            <input type="email" class="form-control" id="patientEmail" placeholder="">
+                            <label for="patientEmail" class=" floating-label">Email address</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="relation" placeholder="Relation with Patient">
-                            <label for="relation" class="text-muted floating-label">Relation with Patient</label>
+                            <input type="text" class="form-control" id="relation" placeholder="">
+                            <label for="relation" class=" floating-label">Relation with Patient</label>
                         </div>
                         <h6 class="py-3">Concierge Location</h6>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="street" placeholder="Street">
-                                <label for="street" class="text-muted floating-label">Street</label>
+                                <input type="text" class="form-control" id="street" placeholder="">
+                                <label for="street" class=" floating-label">Street</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="city" placeholder="City">
-                                <label for="city" class="text-muted floating-label">City</label>
+                                <input type="text" class="form-control" id="city" placeholder="">
+                                <label for="city" class=" floating-label">City</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="state" placeholder="State">
-                                <label for="state" class="text-muted floating-label">State</label>
+                                <input type="text" class="form-control" id="state" placeholder="">
+                                <label for="state" class=" floating-label">State</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="number" class="form-control" id="zip" placeholder="Zip Code">
-                                <label for="zip" class="text-muted floating-label">Zip Code</label>
+                                <input type="number" class="form-control" id="zip" placeholder="">
+                                <label for="zip" class=" floating-label">Zip Code</label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <h6 class="py-3">Patient Information</h6>
                 <div class="form-floating">
-                    <textarea class="form-control" placeholder="Symptoms" id="symptoms"
-                        style="height: 15vh;"></textarea>
-                    <label for="symptoms" class="text-muted floating-label">Enter Brief Details of Symptoms
+                    <textarea class="form-control" placeholder="" id="symptoms" style="height: 15vh;"></textarea>
+                    <label for="symptoms" class=" floating-label">Enter Brief Details of Symptoms
                         (Optional)</label>
                 </div>
                 <div class="container-fluid mt-3 p-0">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="fname" placeholder="First Name">
-                                <label for="fname" class="text-muted floating-label">First Name</label>
+                                <input type="text" class="form-control" id="fname" placeholder="">
+                                <label for="fname" class=" floating-label">First Name</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="lname" placeholder="Last Name">
-                                <label for="lname" class="text-muted floating-label">Last Name</label>
+                                <input type="text" class="form-control" id="lname" placeholder="">
+                                <label for="lname" class=" floating-label">Last Name</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="date" class="form-control" id="dob" placeholder="First Name">
-                                <label for="dob" class="text-muted floating-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="dob" placeholder="">
+                                <label for="dob" class=" floating-label">Date of Birth</label>
                             </div>
                             <h6 class="py-3">Patient Contact Information</h6>
                         </div>
@@ -159,11 +160,10 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="patientEmail"
-                                    placeholder="Email address">
-                                <label for="patientEmail" class="text-muted floating-label">Email address</label>
+                                <input type="email" class="form-control" id="patientEmail" placeholder="">
+                                <label for="patientEmail" class=" floating-label">Email address</label>
                             </div>
-                            
+
                         </div>
                         <div class="col-md-6 z-3">
                             <div class="form-floating mb-3 h-100">
@@ -175,9 +175,8 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="number" class="form-control" id="roomNum"
-                                    placeholder="Room #/ Suite (Optional)">
-                                <label for="roomNum" class="text-muted floating-label">Room #/ Suite (Optional)</label>
+                                <input type="number" class="form-control" id="roomNum" placeholder="">
+                                <label for="roomNum" class=" floating-label">Room #/ Suite (Optional)</label>
                             </div>
                         </div>
                     </div>
@@ -216,6 +215,15 @@
                     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
             })
         };
+
+        var myModal = new bootstrap.Modal(document.getElementById('modal'));
+window.onload = function () {
+    if (sessionStorage.getItem('#modalc') !== 'true') {
+        myModal.show();
+        sessionStorage.setItem('#modalc', 'true');
+    }
+}
+
     </script>
     <div class="row ">
         <footer class="text-end bg-black">
@@ -223,8 +231,8 @@
                 Conditions</a><span class="text-white-50 mx-3">|</span><a href="#"
                 class="text-white-50 text-decoration-none fs-6">Privacy Policy</a>
         </footer>
-</div>
-<script type="text/javascript" src="/js/script.js"></script>
+    </div>
+    <script type="text/javascript" src="/js/script.js"></script>
 </body>
 
 </html>

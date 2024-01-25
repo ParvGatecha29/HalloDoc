@@ -1,42 +1,126 @@
 :root {
-    color-scheme: light dark; /* both supported */
-  }
+  color-scheme: light dark;
+  /* both supported */
+}
+
+body {
+  --text-color: #222;
+  --bkg-color: #fff;
+}
+
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #121212;
+}
+
+html {
+  --text-color-normal: #0a244d;
+  --text-color-light: #8cabd9;
+}
+
+html[data-theme='dark'] {
+  --text-color-normal: hsl(210, 10%, 62%);
+  --text-color-light: hsl(210, 15%, 35%);
+  --text-color-richer: hsl(210, 50%, 72%);
+  --text-color-highlight: hsl(25, 70%, 45%);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  /* defaults to dark theme */
   body {
-    --text-color: #222;
-    --bkg-color: #fff;
-  }
-  body.dark-theme {
     --text-color: #eee;
     --bkg-color: #121212;
   }
-  
-  @media (prefers-color-scheme: dark) {
-    /* defaults to dark theme */
-    body {
-      --text-color: #eee;
-      --bkg-color: #121212;
-    }
-    body.light-theme {
-      --text-color: #222;
-      --bkg-color: #fff;
-    }
-  }
-  
-  * {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  body,input,select,textarea{
-    background: var(--bkg-color) !important;
-  }
-  
-  h1,h2,h3,h4,h5,h6,label,strong,input,textarea{
-    color: var(--text-color) !important;
+
+  body.light-theme {
+    --text-color: #222;
+    --bkg-color: #fff;
   }
 
-  ::placeholder{
-    color: grey !important;
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
   }
-  label{
-    background: transparent !important;
+
+  img:hover {
+    opacity: 1;
   }
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+input,
+select,
+textarea,
+label,
+.modal-content,
+.iti__country-list {
+  background: var(--bkg-color) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+strong,
+input,
+textarea,
+p,
+i,
+.modal-content,
+.iti__country-list {
+  color: var(--text-color) !important;
+}
+
+::placeholder {
+  color: rgb(194, 186, 186) !important;
+}
+
+label {
+  background: transparent !important;
+}
+
+.form-control {
+  border: none;
+  border: 1px solid rgb(97, 94, 94);
+}
+
+.floating-label::after{
+  background: transparent !important;
+}
+
+input:focus { 
+  outline: none !important;
+  border-color: #40c7e9 !important;
+  box-shadow: none !important;
+  color: #40c7e9 ;
+}
+
+.form-control:focus + .floating-label,.form-group:focus + .floating-label{
+  color: #40c7e9 !important;
+}
+
+
+  textarea:focus { 
+    outline: none !important;
+    border-color: #40c7e9 !important;
+    box-shadow: none !important;
+    color: #40c7e9 ; 
+  }
+  
+  .form-style input:focus {
+    color:#40c7e9 !important;
+}
+
+.floating-label:focus {
+  color: #40c7e9!important;
+}
+
+
