@@ -46,9 +46,9 @@
                         </div>
                         <div class="form-group pb-3 form-floating d-flex d-inline">
                             <input type="password" placeholder="Password" class="form-control"
-                                id="exampleInputPassword1">
+                                id="pass">
                             <span onclick="pass()">
-                                <i class="bi bi-eye" aria-hidden="true"></i>
+                                <i class="bi bi-eye" aria-hidden="true" id="eye"></i>
                             </span>
                             <label for="exampleInputPassword1" class="floating-label">Password</label>
                         </div>
@@ -68,16 +68,6 @@
         </div>
     </div>
     <script type="text/javascript" src="/js/script.js"></script>
-    <script>
-        function pass() {
-            var x = document.getElementById("exampleInputPassword1");
-            if (x.type === "password") {
-                x.type = "text";
-            } else {
-                x.type = "password";
-            }
-        }
-    </script>
 </body>
 
 </html>

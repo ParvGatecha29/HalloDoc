@@ -29,3 +29,16 @@ function upload(file){
     var span = document.getElementById("upload");
     span.innerHTML = name;
 } 
+
+function pass() {
+    var x = document.getElementById("pass");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+
+    var e = document.querySelector("#eye");
+    e.classList.toggle("bi-eye-slash");
+    e.classList.toggle("bi-eye");
+}

@@ -22,34 +22,6 @@
   .navBar{
     box-shadow: 2px 2px 20px rgb(179, 177, 177);
   }
-  .patientBtn{
-    color : #4367d3;
-    background-color : #e8eaf1;
-    border-color: #4367d3;
-  }
-  .patientBtn:hover{
-    background-color: #ffffff;
-    color : #4367d3;
-    border-color: #40c7e9;
-  }
-  .famBtn:hover{
-    background-color: white !important;
-    color:#40c7e9 ;
-  }
-  .busBtn{
-    color : #d90f81;
-    background-color: #F7E5EE;
-    border-color: #d90f81;
-  }
-  .busBtn:hover{
-    color : #d90f81;
-    background-color: #ffffff;
-    border-color: #d90f81;
-  }
-  .concBtn:hover{
-    background-color: white !important;
-    color:#298014 ;
-  }
   .backBtn:hover{
     color:white;
     background-color: #40c7e9 !important;
@@ -107,9 +79,6 @@
     }
     .footerSubmit{
       font-size: .5rem;
-    }
-    .busBtn, .concBtn, .famBtn, .patientBtn{
-      
     }
   }
 

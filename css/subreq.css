@@ -55,15 +55,14 @@ footer a {
     border-color: #4367d3;
   }
   .patientBtn:hover{
-    background-color: #ffffff;
+    background-color: transparent !important;
     color : #4367d3;
-    border-color: #40c7e9;
   }
   .famBtn{
     background-color: rgb(230, 245, 248);
   }
   .famBtn:hover{
-    background-color: white !important;
+    background-color: transparent !important;
     color:#40c7e9 ;
   }
   .busBtn{
@@ -73,14 +72,14 @@ footer a {
   }
   .busBtn:hover{
     color : #d90f81;
-    background-color: #ffffff;
+    background-color: transparent !important;
     border-color: #d90f81;
   }
   .concBtn{
     background-color: rgb(211, 245, 211);
   }
   .concBtn:hover{
-    background-color: white !important;
+    background-color: transparent !important;
     color:#298014 ;
   }
   .backBtn:hover{
@@ -123,8 +122,5 @@ footer a {
     }
     .footerSubmit{
       font-size: .5rem;
-    }
-    .busBtn, .concBtn, .famBtn, .patientBtn{
-      
     }
   }

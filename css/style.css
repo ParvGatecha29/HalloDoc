@@ -58,7 +58,9 @@ select,
 textarea,
 label,
 .modal-content,
-.iti__country-list {
+.iti__country-list,
+li,
+.bg {
   background: var(--bkg-color) !important;
 }
 
@@ -75,7 +77,9 @@ textarea,
 p,
 i,
 .modal-content,
-.iti__country-list {
+.iti__country-list,
+li,
+.bg {
   color: var(--text-color) !important;
 }
 
@@ -123,4 +127,30 @@ input:focus {
   color: #40c7e9!important;
 }
 
+.logo{
+  display: block;
+}
 
+.navLogo{
+  margin-bottom: 0;
+  width: 40%;
+}
+
+.nav-link.active {
+  border:none !important;
+  border-bottom: 4px solid rgb(105, 200, 212) !important;
+  color: rgb(107, 228, 236) !important;
+  background-color: transparent !important;;
+}
+
+.navBar{
+  box-shadow: 2px 2px 20px rgb(179, 177, 177);
+}
+
+.tab {
+  background-color: #fafafa;
+}
+
+.dark-theme .tab {
+  background-color: #222 !important;
+}
